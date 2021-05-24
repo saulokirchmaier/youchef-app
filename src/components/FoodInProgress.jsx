@@ -180,7 +180,7 @@ function FoodInProgress() {
           </form>
         </div>
       </div>
-      <div className="instructions">
+      <div className="instructions recomendations">
         <h2>Instructions</h2>
         <p data-testid="instructions">{strInstructions}</p>
       </div>
