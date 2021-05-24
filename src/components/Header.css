@@ -1,6 +1,6 @@
 .Header {
   align-items: center;
-  background-color: #c4c4c4;
+  background-color: #FF9505;
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -11,6 +11,6 @@
 }
 
 .Header button {
-  background-color: #c4c4c4;
+  background-color: #FF9505;
   border: none;
 }
