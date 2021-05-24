@@ -63,3 +63,8 @@ iframe {
 .on {
   text-decoration: line-through;
 }
+
+.all-ingredients {
+  display: flex;
+  flex-direction: column;
+}

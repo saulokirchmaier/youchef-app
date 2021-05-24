@@ -5,6 +5,12 @@
   padding: 4px;
 }
 
+.search-button {
+  background-color: #CC5803;
+  border: none;
+  padding: 4px;
+}
+
 .radio-buttons {
   align-items: center;
   display: flex;
@@ -14,4 +20,8 @@
 .radio-buttons label {
   margin: 0;
   padding: 4px;
+}
+
+.radio {
+  margin-right: 4px;
 }
