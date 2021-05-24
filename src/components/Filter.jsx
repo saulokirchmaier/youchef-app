@@ -40,7 +40,12 @@ function Filter({
   };
 
   return (
-    <button type="button" onClick={ handleClick } data-testid={ testId }>
+    <button
+      type="button"
+      onClick={ handleClick }
+      data-testid={ testId }
+      className="button-filter"
+    >
       {filter}
     </button>
   );

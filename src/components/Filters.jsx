@@ -9,6 +9,7 @@ import {
 import Filter from './Filter';
 import { fetchRecipes } from '../services/fetchRecipes';
 import { getRecipesAction } from '../Redux/actions';
+import './Filters.css';
 
 function Filters({ type, setRecipes }) {
   const { pathname } = useLocation();
@@ -31,8 +32,13 @@ function Filters({ type, setRecipes }) {
   };
 
   return (
-    <div>
-      <button type="button" onClick={ handleClick } data-testid="All-category-filter">
+    <div className="Filters">
+      <button
+        type="button"
+        onClick={ handleClick }
+        data-testid="All-category-filter"
+        className="button-filter"
+      >
         All
       </button>
       {filters.map((filter, index) => (
