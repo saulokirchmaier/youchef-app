@@ -1,0 +1,14 @@
+.Explore {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Explore .button {
+  box-shadow: 0 4px 4px rgba(204, 88, 3, 0.25);
+  font-size: 30px;
+  padding: 10px;
+  width: 80vw;
+}
