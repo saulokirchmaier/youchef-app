@@ -30,7 +30,7 @@ function Ingredients({ fetchRecipes, doNotFetch }) {
   };
 
   return (
-    <div>
+    <div className="Ingredients">
       <Header title="Explorar Ingredientes" />
       <section className="Cards">
         {ingredients.map((ingredient, index) => (

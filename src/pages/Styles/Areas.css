@@ -1,3 +1,14 @@
+.Areas {
+  background-color: rgba(255, 201, 113, 0.25);
+}
+
+.Areas select {
+  background-color: #FFB627;
+  height: 40px;
+  margin: 2.5vw;
+  width: 95vw;
+}
+
 .name {
   color: black;
   font-size: small;
