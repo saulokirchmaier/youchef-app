@@ -29,11 +29,12 @@
   background: white;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(206, 88, 3, 0.25);
   display: flex;
   flex-direction: row;
-  margin: 5px 0;
+  margin: 5px auto;
   text-align: center;
+  width: 95vw;
 }
 
 .Done-card .info {
@@ -56,7 +57,7 @@
 }
 
 .Done-card .top-text {
-  color: darkgrey;
+  color: #FFB627;
   height: 18px;
   left: 5px;
   position: absolute;

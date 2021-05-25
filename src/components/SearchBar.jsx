@@ -84,6 +84,7 @@ function SearchBar(props) {
         value={ search.word }
         onChange={ handleChange }
         placeholder="Digite aqui"
+        className="search-input"
       />
       {renderRadioButtons()}
       <button

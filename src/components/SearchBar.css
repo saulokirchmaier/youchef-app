@@ -1,5 +1,5 @@
 .SearchBar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px rgba(206, 88, 3, 0.25);
   display: flex;
   flex-direction: column;
   padding: 4px;
@@ -9,12 +9,16 @@
   background-color: #CC5803;
   border: none;
   padding: 4px;
+  margin: 0 auto;
+  width: 95vw;
 }
 
 .radio-buttons {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95vw;
 }
 
 .radio-buttons label {
@@ -24,4 +28,13 @@
 
 .radio {
   margin-right: 4px;
+}
+
+.search-input {
+  box-sizing: border-box;
+  border: none;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  width: 95vw;
 }
