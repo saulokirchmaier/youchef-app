@@ -1,9 +1,10 @@
 .Cards {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   justify-content: space-around;
   padding-bottom: 5px;
   margin: 10px 0 50px;
+  min-height: 75vh;
 }

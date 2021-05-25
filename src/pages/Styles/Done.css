@@ -1,16 +1,27 @@
+.Done-recipes {
+  background-color: rgba(255, 201, 113, 0.25);
+  height: 100vh;
+}
+
 .Done-recipes .cards {
   padding: 5px;
 }
 
 .Done-recipes .filters {
+  align-items: center;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 95vw;
 }
 
 .Done-recipes .filter {
-  background: #c4c4c4;
-  width: 30%;
+  background-color: #CC5803;
+  border: none;
+  min-width: 80px;
+  flex-grow: 1;
 }
 
 .Done-card {
