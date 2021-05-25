@@ -1,0 +1,16 @@
+.Filters {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  margin: 2.5vw auto;
+  width: 95vw;
+}
+
+.button-filter {
+  background-color: #CC5803;
+  border: none;
+  min-width: 80px;
+  flex-grow: 1;
+}

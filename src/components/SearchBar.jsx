@@ -15,7 +15,8 @@ function SearchBar(props) {
     filter: 'filter.php?i=',
   });
 
-  const handleChange = ({ target: { name, value } }) => {
+  const handleChange = ({ target: { name, value, typeSearch } }) => {
+    console.log(typeSearch);
     setSearch({ ...search, [name]: value });
   };
 
@@ -41,6 +42,7 @@ function SearchBar(props) {
           id="ingredient-search-radio"
           onChange={ handleChange }
           checked={ search.filter === 'filter.php?i=' }
+          className="radio"
         />
         Ingredientes
       </label>
@@ -53,6 +55,7 @@ function SearchBar(props) {
           id="name-search-radio"
           onChange={ handleChange }
           checked={ search.filter === 'search.php?s=' }
+          className="radio"
         />
         Nome
       </label>
@@ -65,6 +68,7 @@ function SearchBar(props) {
           id="first-letter-search-radio"
           onChange={ handleChange }
           checked={ search.filter === 'search.php?f=' }
+          className="radio"
         />
         Primeira letra
       </label>
@@ -79,12 +83,15 @@ function SearchBar(props) {
         name="word"
         value={ search.word }
         onChange={ handleChange }
+        placeholder="Digite aqui"
+        className="search-input"
       />
       {renderRadioButtons()}
       <button
         type="button"
         data-testid="exec-search-btn"
         onClick={ handleClick }
+        className="search-button"
       >
         Buscar
       </button>

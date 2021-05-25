@@ -1,5 +1,6 @@
 .Details {
   align-items: flex-start;
+  background-color: rgba(255, 201, 113, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,11 +20,11 @@
 }
 
 .title-btns h3 {
-  color: darkgray;
+  color: #FFB627;
 }
 
 .title-btns button {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
@@ -37,7 +38,7 @@ p {
 }
 
 .ingredients div, .instructions p {
-  background-color: #e5e5e5;
+  background-color: #FFC971;
   border-radius: 4px;
   padding: 5px;
 }
@@ -51,7 +52,7 @@ iframe {
 }
 
 .start-recipe-btn {
-  background-color: #6ce34f;
+  background-color: #CC5803;
   border: none;
   bottom: 0;
   font-size: 29px;
@@ -62,4 +63,9 @@ iframe {
 
 .on {
   text-decoration: line-through;
+}
+
+.all-ingredients {
+  display: flex;
+  flex-direction: column;
 }

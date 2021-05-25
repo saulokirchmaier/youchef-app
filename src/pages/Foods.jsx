@@ -16,7 +16,7 @@ function Foods({ getRecipes, recipes, itFetch, shouldItFetch }) {
   }, [getRecipes, itFetch]);
 
   return (
-    <div id="Recipes">
+    <div id="Recipes" className="Foods">
       <Header title="Explorar Comidas" searchBtn />
       <Filters type="Meals" />
       <Cards items={ recipes } idType="idMeal" />

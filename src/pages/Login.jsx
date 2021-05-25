@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
+import logo from '../images/YouChef.png';
 import './Styles/Login.css';
 
 function Login() {
@@ -54,6 +55,7 @@ function Login() {
 
   return (
     <div className="Login">
+      <img src={ logo } alt="YouChef" />
       <form className="form">
         <h1>Login</h1>
         <input

@@ -160,7 +160,7 @@ function DrinkInProgress() {
       <div className="ingredients">
         <h2>Ingredients</h2>
         <div>
-          <form>
+          <form className="all-ingredients">
             {allIngrdients.map(({ name, quantity }, index) => (
               <label
                 key={ name }
@@ -174,13 +174,13 @@ function DrinkInProgress() {
                   onChange={ handleChange }
                   checked={ progress[name] }
                 />
-                {`- ${name} - ${quantity}`}
+                {` ${name} - ${quantity}`}
               </label>
             ))}
           </form>
         </div>
       </div>
-      <div className="instructions">
+      <div className="instructions recomendations">
         <h2>Instructions</h2>
         <p data-testid="instructions">{strInstructions}</p>
       </div>

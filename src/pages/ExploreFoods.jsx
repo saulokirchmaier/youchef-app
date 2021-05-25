@@ -7,30 +7,35 @@ function Favorites() {
   return (
     <div>
       <Header title="Explorar Comidas" />
-      <Link to="/explorar/comidas/ingredientes">
-        <button
-          type="button"
-          data-testid="explore-by-ingredient"
-        >
-          Por Ingredientes
-        </button>
-      </Link>
-      <Link to="/explorar/comidas/area">
-        <button
-          type="button"
-          data-testid="explore-by-area"
-        >
-          Por Local de Origem
-        </button>
-      </Link>
-      <Link to="/comidas/52771">
-        <button
-          type="button"
-          data-testid="explore-surprise"
-        >
-          Me Surpreenda!
-        </button>
-      </Link>
+      <div className="Explore">
+        <Link to="/explorar/comidas/ingredientes">
+          <button
+            type="button"
+            data-testid="explore-by-ingredient"
+            className="button"
+          >
+            Por Ingredientes
+          </button>
+        </Link>
+        <Link to="/explorar/comidas/area">
+          <button
+            type="button"
+            data-testid="explore-by-area"
+            className="button"
+          >
+            Por Local de Origem
+          </button>
+        </Link>
+        <Link to="/comidas/52771">
+          <button
+            type="button"
+            data-testid="explore-surprise"
+            className="button"
+          >
+            Me Surpreenda!
+          </button>
+        </Link>
+      </div>
       <Footer />
     </div>
   );

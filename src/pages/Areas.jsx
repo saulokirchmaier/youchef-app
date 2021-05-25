@@ -26,7 +26,7 @@ function Areas() {
   return (
     <div>
       <Header title="Explorar Origem" searchBtn />
-      <main>
+      <main className="Areas">
         <section>
           <select
             data-testid="explore-by-area-dropdown"
