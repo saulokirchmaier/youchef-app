@@ -6,20 +6,35 @@ import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 import { fetchMeals } from '../services/fetchRecipes';
 import './Styles/Recipes.css';
-import { getRecipesAction, shouldFetch } from '../Redux/actions';
+import { getRecipesAction, isLoadingAction, shouldFetch } from '../Redux/actions';
 import Filters from '../components/Filters';
+import ChefLoading from '../components/ChefLoading';
 
-function Foods({ getRecipes, recipes, itFetch, shouldItFetch }) {
+function Foods({ getRecipes, recipes, itFetch, shouldItFetch, setIsLoading, isLoading }) {
   useEffect(() => {
-    if (shouldItFetch) fetchMeals().then((data) => getRecipes(data));
-    itFetch();
-  }, [getRecipes, itFetch]);
+    setIsLoading(true);
+    const timeout = 1500;
+    if (shouldItFetch) {
+      fetchMeals().then((data) => {
+        getRecipes(data);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, timeout);
+      });
+      itFetch();
+    }
+  }, [getRecipes, itFetch, setIsLoading, shouldItFetch]);
 
+  const toLoad = (
+    <div>
+      <Filters type="Meals" />
+      <Cards items={ recipes } idType="idMeal" />
+    </div>
+  );
   return (
     <div id="Recipes" className="Foods">
       <Header title="Explorar Comidas" searchBtn />
-      <Filters type="Meals" />
-      <Cards items={ recipes } idType="idMeal" />
+      {isLoading ? <ChefLoading /> : toLoad}
       <Footer />
     </div>
   );
@@ -28,11 +43,13 @@ function Foods({ getRecipes, recipes, itFetch, shouldItFetch }) {
 const mapStateToProps = (state) => ({
   recipes: state.recipesList.list,
   shouldItFetch: state.recipesList.shouldFetch,
+  isLoading: state.recipesList.isLoading,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   getRecipes: (data) => dispatch(getRecipesAction(data)),
   itFetch: () => dispatch(shouldFetch()),
+  setIsLoading: (bool) => dispatch(isLoadingAction(bool)),
 });
 
 Foods.propTypes = {

@@ -8,6 +8,7 @@ import {
   SELECT_FILTER,
   DONT_FETCH,
   SHOULD_FETCH,
+  IS_LOADING,
 } from './actionTypes';
 import fetchSearchBar from '../../services';
 import { fetchByCategory } from '../../services/fetchCategories';
@@ -52,3 +53,5 @@ export const getRecipesThunk = (recipeType, category) => async (dispatch) => {
 export const dontFetch = () => ({ type: DONT_FETCH });
 
 export const shouldFetch = () => ({ type: SHOULD_FETCH });
+
+export const isLoadingAction = (bool) => ({ type: IS_LOADING, bool });

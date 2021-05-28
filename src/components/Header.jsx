@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { string } from 'prop-types';
 import './Header.css';
 import profileIcon from '../images/profileIcon.svg';
 import searchIcon from '../images/searchIcon.svg';
 import SearchBar from './SearchBar';
-import Loading from './Loading';
 
 function Header(props) {
-  const { title, searchBtn = false, loading } = props;
+  const { title, searchBtn = false } = props;
   const [search, setSearch] = useState(false);
 
   const handleClick = () => {
@@ -47,17 +45,12 @@ function Header(props) {
     <div>
       {renderHeader()}
       {search && <SearchBar />}
-      {loading && <Loading />}
     </div>
   );
 }
-
-const mapStateToProps = (state) => ({
-  loading: state.recipesList.isLoading,
-});
 
 Header.propTypes = {
   title: string,
 }.isRequired;
 
-export default connect(mapStateToProps)(Header);
+export default Header;

@@ -8,3 +8,4 @@ export const COULD_REDIRECT = 'COULD_REDIRECT';
 export const SELECT_FILTER = 'SELECT_FILTER';
 export const DONT_FETCH = 'DONT_FETCH';
 export const SHOULD_FETCH = 'SHOULD_FETCH';
+export const IS_LOADING = 'IS_LOADING';
