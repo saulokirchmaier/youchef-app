@@ -6,6 +6,7 @@ import {
   RESET_NOT_FOUND,
   DONT_FETCH,
   SHOULD_FETCH,
+  IS_LOADING,
 } from '../actions/actionTypes';
 
 const INITIAL_STATE = {
@@ -15,7 +16,7 @@ const INITIAL_STATE = {
   shouldFetch: true,
 };
 
-const recipesList = (state = INITIAL_STATE, { type, recipes, items }) => {
+const recipesList = (state = INITIAL_STATE, { type, recipes, items, bool }) => {
   switch (type) {
   case RECIPES_LIST:
     return {
@@ -54,6 +55,11 @@ const recipesList = (state = INITIAL_STATE, { type, recipes, items }) => {
     return {
       ...state,
       shouldFetch: true,
+    };
+  case IS_LOADING:
+    return {
+      ...state,
+      isLoading: bool,
     };
   default:
     return state;
