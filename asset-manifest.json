@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/youchef-app/static/css/main.920799ce.chunk.css",
+    "main.js": "/youchef-app/static/js/main.13983cc5.chunk.js",
+    "main.js.map": "/youchef-app/static/js/main.13983cc5.chunk.js.map",
+    "runtime-main.js": "/youchef-app/static/js/runtime-main.18d6d8eb.js",
+    "runtime-main.js.map": "/youchef-app/static/js/runtime-main.18d6d8eb.js.map",
+    "static/css/2.68d715af.chunk.css": "/youchef-app/static/css/2.68d715af.chunk.css",
+    "static/js/2.28f6ee60.chunk.js": "/youchef-app/static/js/2.28f6ee60.chunk.js",
+    "static/js/2.28f6ee60.chunk.js.map": "/youchef-app/static/js/2.28f6ee60.chunk.js.map",
+    "index.html": "/youchef-app/index.html",
+    "precache-manifest.8b039e257b46f416e99aac818c0c077c.js": "/youchef-app/precache-manifest.8b039e257b46f416e99aac818c0c077c.js",
+    "service-worker.js": "/youchef-app/service-worker.js",
+    "static/css/2.68d715af.chunk.css.map": "/youchef-app/static/css/2.68d715af.chunk.css.map",
+    "static/css/main.920799ce.chunk.css.map": "/youchef-app/static/css/main.920799ce.chunk.css.map",
+    "static/js/2.28f6ee60.chunk.js.LICENSE.txt": "/youchef-app/static/js/2.28f6ee60.chunk.js.LICENSE.txt",
+    "static/media/YouChef.png": "/youchef-app/static/media/YouChef.751d2a05.png",
+    "static/media/blackHeartIcon.svg": "/youchef-app/static/media/blackHeartIcon.b8913346.svg",
+    "static/media/drinkIcon.svg": "/youchef-app/static/media/drinkIcon.f87c47c3.svg",
+    "static/media/exploreIcon.svg": "/youchef-app/static/media/exploreIcon.157945ff.svg",
+    "static/media/mealIcon.svg": "/youchef-app/static/media/mealIcon.b27ba19e.svg",
+    "static/media/profileIcon.svg": "/youchef-app/static/media/profileIcon.74e487e5.svg",
+    "static/media/styles.css": "/youchef-app/static/media/revicons.2feb69cc.eot",
+    "static/media/searchIcon.svg": "/youchef-app/static/media/searchIcon.db812135.svg",
+    "static/media/shareIcon.svg": "/youchef-app/static/media/shareIcon.06215ed4.svg",
+    "static/media/whiteHeartIcon.svg": "/youchef-app/static/media/whiteHeartIcon.ea3b6ba8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18d6d8eb.js",
+    "static/css/2.68d715af.chunk.css",
+    "static/js/2.28f6ee60.chunk.js",
+    "static/css/main.920799ce.chunk.css",
+    "static/js/main.13983cc5.chunk.js"
+  ]
+}
