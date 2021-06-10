@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/youchef-app/precache-manifest.8b039e257b46f416e99aac818c0c077c.js"
+  "/youchef-app/precache-manifest.a4128f473db52d0c21c6c481ca20302f.js"
 );
 
 self.addEventListener('message', (event) => {

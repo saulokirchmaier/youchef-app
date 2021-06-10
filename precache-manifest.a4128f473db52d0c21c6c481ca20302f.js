@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bb7d2286db4ac0da4796657e4c0e59f",
+    "revision": "26f957de61c6049439da8fb88ad90bb4",
     "url": "/youchef-app/index.html"
   },
   {
-    "revision": "ae42777cd0636f96ffe8",
+    "revision": "b3cdc1a4760bc08ca92e",
     "url": "/youchef-app/static/css/2.68d715af.chunk.css"
   },
   {
-    "revision": "1b07e15c01df57b4ea00",
+    "revision": "64690c6fcb0998e6339b",
     "url": "/youchef-app/static/css/main.920799ce.chunk.css"
   },
   {
-    "revision": "ae42777cd0636f96ffe8",
-    "url": "/youchef-app/static/js/2.28f6ee60.chunk.js"
+    "revision": "b3cdc1a4760bc08ca92e",
+    "url": "/youchef-app/static/js/2.9a20f94c.chunk.js"
   },
   {
     "revision": "9b318b6fb13190fe82c0677e9264b3c7",
-    "url": "/youchef-app/static/js/2.28f6ee60.chunk.js.LICENSE.txt"
+    "url": "/youchef-app/static/js/2.9a20f94c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b07e15c01df57b4ea00",
-    "url": "/youchef-app/static/js/main.13983cc5.chunk.js"
+    "revision": "64690c6fcb0998e6339b",
+    "url": "/youchef-app/static/js/main.277c1d69.chunk.js"
   },
   {
     "revision": "cc013831504882564df4",
